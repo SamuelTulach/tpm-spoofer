@@ -7,6 +7,8 @@ Unfortunately, a common misconception exists that resetting the TPM is enough to
 ## Possible flags
 I wanted to keep this project as simple as possible, and as such, it uses the good ol' IOCTL dispatch swap. This is most likely the biggest detection vector, even without considering TPM, so **do not use this as is** ([hook WPP](https://github.com/btbd/wpp/) or [use hypervisor](https://github.com/tandasat/SimpleSvmHook)). For the TPM itself, all it does in its current state is overwrite every request to read any public key. As you can imagine, it is quite trivial to figure out that something is going on. It will suffice for anything that only blindly checks for the EK (which is what a few ACs do at the time of this project's release).
 
+Also make sure to clean up the registry entiries created by tpm.sys on boot: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TPM\WMI\Endorsement`.
+
 ## Usage
 This repository contains two projects:
 - `tpm-info` - Simple console application to read EK from the TPM under Windows
