@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\extern">
+      <UniqueIdentifier>{729248fa-59b3-4e56-8df5-e4678444e236}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="entry.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="hook.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="global.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="hook.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm_defines.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm20.h">
+      <Filter>Source\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm12.h">
+      <Filter>Source\extern</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
