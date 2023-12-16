@@ -6,6 +6,7 @@
 #include <ntstrsafe.h>
 #include <ntdef.h>
 #include <bcrypt.h>
+#include <stddef.h>
 
 #include "tpm20.h"
 #include "tpm_defines.h"

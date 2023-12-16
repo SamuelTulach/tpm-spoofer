@@ -1,5 +1,3 @@
-#include <stddef.h>
-
 #include "global.h"
 
 TPM2B_PUBLIC_KEY_RSA Hook::generatedKey = { 0 };
